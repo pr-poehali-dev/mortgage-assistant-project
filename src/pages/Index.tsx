@@ -6,6 +6,7 @@ import { Label } from '@/components/ui/label';
 import { Slider } from '@/components/ui/slider';
 import Icon from '@/components/ui/icon';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import MoneyBackground from '@/components/MoneyBackground';
 
 const Index = () => {
   const [propertyPrice, setPropertyPrice] = useState(3000000);
@@ -33,7 +34,8 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white relative">
+      <MoneyBackground />
       <header className="border-b sticky top-0 bg-white z-50 shadow-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
